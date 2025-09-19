@@ -1,0 +1,18 @@
+@import "libs/_bootstrap-reboot.min.scss";
+@import "libs/_fonts.scss";
+
+.regular {
+  font-family: "Roboto";
+  font-weight: 400;
+  color: green;
+}
+.light {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: green;
+}
+.bold {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: green;
+}
