@@ -1,18 +1,14 @@
 @import "libs/_bootstrap-reboot.min.scss";
 @import "libs/_fonts.scss";
 
-.regular {
-  font-family: "Roboto";
-  font-weight: 400;
-  color: green;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
-.light {
-  font-family: "Roboto";
-  font-weight: 300;
-  color: green;
+
+a {
+  text-decoration: none;
 }
-.bold {
-  font-family: "Roboto";
-  font-weight: bold;
-  color: green;
-}
+
+@import "blocks/_header.scss";
+

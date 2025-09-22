@@ -1,0 +1,34 @@
+.header {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    &__item {
+      padding: 12px 15px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-evenly;
+    &_wrap {
+      padding-right: 15px;
+    }
+  }
+  &__btn {
+    width: 160px;
+    height: 45px;
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.837;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background: #ec644b;
+  }
+}
