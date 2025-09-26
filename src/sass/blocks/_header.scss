@@ -1,9 +1,13 @@
 .header {
   position: relative;
-  background: url("../../img/bg_promo.jpg") center (center / cover) no-repeat;
-  min-height: 670px;
+  // background: url("../../img/bg_promo.jpg") center (center / cover) no-repeat;
+  // top: 20px;
   a {
-    color: rgb(255, 255, 255);
+    color: $white-text;
+    &:hover {
+      color: $main-color;
+      text-decoration: underline;
+    }
   }
 
   &__nav {
@@ -11,25 +15,26 @@
     display: flex;
     justify-content: space-between;
     top: 20px;
+    z-index: 2;
   }
   &__logo {
-    padding-right: 50px;    
+    padding-right: 35px;
   }
   &__menu {
-    padding: 35px 50px 0 0;
+    padding: 35px 35px 0 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    
+
     &__item {
       height: 23px;
-      padding: 0 15px;
+      padding: 0 13px;
       font-family: Roboto;
       font-size: 15px;
-      border-right: 2px dotted #fff;  
+      border-right: 2px dotted $white-text;
       &:last-child {
-      border-right: none;
-    }    
+        border-right: none;
+      }
     }
   }
   &__contacts {
@@ -40,37 +45,28 @@
     &_wrap {
       padding-right: 15px;
       text-align: right;
-      // a {
-      //   color: rgb(255, 255, 255);
-      // }
     }
   }
   &__call {
     font-family: Roboto;
-    color: rgb(255, 255, 255);
+    color: $white-text;
     font-size: 14px;
   }
   &__phone {
     font-family: Roboto;
     font-size: 19px;
-    // a {
-    //   color: rgb(255, 255, 255);
-    // }
-    
-
-
   }
   &__btn {
     width: 160px;
     height: 45px;
     font-size: 12px;
     font-family: "Roboto";
-    color: rgb(255, 255, 255);
+    color: $white-text;
     text-transform: uppercase;
     line-height: 1.837;
     text-align: center;
     border: none;
     border-radius: 25px;
-    background: #ec644b;
+    background: $main-color;
   }
 }
