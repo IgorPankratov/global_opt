@@ -13,7 +13,7 @@
   }
   &__header {
     font-size: 72px;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed";
     color: $main-color;
     font-weight: 700;
     text-transform: uppercase;
@@ -22,11 +22,49 @@
   }
   &__subheader {
     font-size: 42px;
-    font-family: 'Roboto Condensed';
-    // color: $main-color;
+    font-family: "Roboto Condensed";
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
-    
+  }
+  &__divider {
+    margin-top: 37px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &_line {
+      width: 400px;
+      height: 2px;
+      background-color: $white-text;
+      align-self: center;
+    }
+    &_ball {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $white-text;
+    }
+  }
+  &__desc {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      // text-align: center;
+    }
+    &_text {
+      padding-top: 20px;
+      font-size: 16px;
+      font-family: "Roboto";
+      font-weight: lighter;
+      color: rgb(255, 255, 255);
+      line-height: 1.375;
+      text-align: center;
+    }
   }
 }
