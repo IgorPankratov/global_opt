@@ -60,11 +60,26 @@
     &_text {
       padding-top: 20px;
       font-size: 16px;
-      font-family: "Roboto";
-      font-weight: lighter;
-      color: rgb(255, 255, 255);
+      font-family: Roboto;
+      font-weight: 300;
       line-height: 1.375;
       text-align: center;
     }
+  }
+  &__btn {
+    display: block;
+    margin: 42px auto 0px;
+    width: 230px;
+    height: 57px;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 700;
+    color: $white-text;
+    text-transform: uppercase;
+    line-height: 1.837;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    background: $main-color;
   }
 }
