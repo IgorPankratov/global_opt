@@ -1,6 +1,7 @@
 @import "libs/_bootstrap-reboot.min.scss";
 @import "libs/_fonts.scss";
 @import "base/_variables.scss";
+@import "base/mixins";
 
 * {
   font-family: "Roboto", sans-serif;
@@ -15,7 +16,13 @@ a {
   text-decoration: none;
 }
 
+.divider {
+  margin: 25px auto;
+  @include divider;
+}
+
 @import "blocks/_header.scss";
 @import "blocks/_promo.scss";
 @import "blocks/_advantages.scss";
+@import "blocks/work";
 
