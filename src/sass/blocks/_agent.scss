@@ -1,0 +1,26 @@
+.agent {
+  height: 340px;
+  margin-top: 55px;
+  padding-top: 57px;
+  background: url(../../img/bg_greate_wall.jpg) center (center/cover) no-repeat;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  &__header {
+    margin-top: 15px;
+    @include header;
+    text-transform: unset;
+    color: $white-text;
+  }
+  &__text {
+    margin-top: 28px;
+    width: 90%;
+    font-size: 19px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    color: $white-text;
+    line-height: 1.421;
+    text-align: center;
+  }
+}
