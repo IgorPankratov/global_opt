@@ -1,15 +1,15 @@
 .agent {
   height: 340px;
   margin-top: 55px;
-  padding-top: 57px;
+  padding: 57px 0 74px;
   background: url(../../img/bg_greate_wall.jpg) center (center/cover) no-repeat;
   img {
     display: block;
     margin: 0 auto;
   }
-  &__header {
-    margin-top: 15px;
+  &__header {    
     @include header;
+    margin-top: 15px;
     text-transform: unset;
     color: $white-text;
   }
