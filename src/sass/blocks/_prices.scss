@@ -1,5 +1,6 @@
 .prices {
   &__header {
+    margin-top: 50px;
     @include header;
   }
   &__text {
@@ -18,13 +19,19 @@
     column-gap: 27px;
   }
   &__item {
-    border: 1px solid $dark-text;
+    border: 1px solid #eaeaea;
     padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+    align-content: space-between;
   }
+
   &__subheader {
     margin: 0 auto;
     width: 99%;
-    height: 20%;
+    height: 17%;
     background: #25333c;
     font-size: 16px;
     font-family: "Roboto";
@@ -34,5 +41,64 @@
     line-height: 3.438;
     text-align: center;
   }
+  &__icon {
+    margin: 0 auto;
+  }
+  &__descr {
+    font-size: 14px;
+    text-align: center;
+    span {
+      display: block;
+      font-size: 28px;
+      color: $main-color;
+      font-weight: 400px;
+      line-height: 1.222;
+    }
+  }
+  &__subDescr {
+    font-weight: lighter;
+    text-align: center;
+  }
+  &__btn {
+    margin: 26px auto;
+    width: 160px;
+    height: 45px;
+    font-size: 12px;
+    font-family: "Roboto";
+    color: $white-text;
+    text-transform: uppercase;
+    line-height: 1.837;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background: $main-color;
+  }
+  &__consultation {
+    margin-top: 56px;
+    font-size: 28px;
+    font-family: "Roboto";
+    color: rgb(58, 58, 58);
+    line-height: 0.821;
+    text-align: center;
+  }
+  &__form {
+    display: flex;
+    justify-content: space-between;    
+    border: 1px solid #eaeaea;
+  }
 }
 
+// .Доставка_12_20_дня_от_1__за_1_кг {
+//   font-size: 14px;
+//   font-family: "Roboto";
+//   color: rgb(46, 46, 46);
+//   text-transform: uppercase;
+//   line-height: 1.643;
+//   text-align: center;
+//   position: absolute;
+//   left: 982.167px;
+//   top: 2592.023px;
+//   width: 160px;
+//   height: 43px;
+//   z-index: 193;
+// }
