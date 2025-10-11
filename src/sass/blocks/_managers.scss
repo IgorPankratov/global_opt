@@ -1,0 +1,25 @@
+.managers {
+  margin-top: 56px;
+  min-height: 342px;
+  background: url("../../img/bg_manager.jpg") center (center/cover) no-repeat;
+  &__icon {
+    padding-top: 58px;
+    text-align: center;
+  }
+  &__header {
+    @include header;
+    margin-top: 25px;
+    text-transform: unset;
+    color: $white-text;
+  }
+  &__text {
+    margin: 18px auto;
+    max-width: 87%;
+    font-size: 19px;
+    font-family: "Roboto";
+    font-weight: lighter;
+    color: $white-text;
+    line-height: 1.421;
+    text-align: center;
+  }
+}
