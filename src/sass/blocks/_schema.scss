@@ -1,0 +1,53 @@
+.schema {
+  background: #f3f3f3;
+  &__header {
+    padding-top: 55px;
+    @include header;
+    // text-align: center;
+    // font-size: 26px;
+    // font-family: "Roboto";
+    // color: $dark-text;
+    // font-weight: bold;
+    // text-transform: uppercase;
+    // line-height: 0.885;
+  }
+  &__wrapper {
+    padding: 37px 0 50px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 40px;
+  }
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  &__item {
+    align-self: baseline;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    // align-content: center;
+    row-gap: 20px;
+  }
+  &__icon {
+    margin: 0 auto;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: $dark-text;
+    font-weight: 300;
+    // line-height: 1.375;
+    text-align: center;
+    span {
+      color: $main-color;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+}
