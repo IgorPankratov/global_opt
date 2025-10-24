@@ -13,4 +13,86 @@
     color: $dark-text;
     line-height: 1.421;
   }
+  &__carousel {
+    margin: 35px auto;
+    position: relative;
+    width: 600px;
+    // overflow: hidden;
+    &-prevBtn,
+    &-nextBtn {
+      position: absolute;
+      top: 25%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 1);
+      // color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    &-prevBtn {
+      left: 30%;
+    }
+
+    &-nextBtn {
+      right: 30%;
+    }
+  }
+
+  &__carousel-inner {
+    display: flex;
+    transition: transform 1s ease;
+    // justify-content: center;
+  }
+
+  &__carousel-item {
+    flex: 0 0 100%;
+    // width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    filter: opacity(25%); /* Базовая прозрачность */
+  }
+  .active {
+    filter: none; /* Убираем прозрачность для активного слайда */
+    z-index: 1; /* Выводим активный слайд вперед */
+  }
+
+  &__photo {
+    width: 114px;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__comment {
+    font-size: 18px;
+    line-height: 1.223;
+    span {
+      display: block;
+      color: $main-color;
+      font-weight: bold;
+    }
+  }
 }
+// .Анисимова_Ольга_Хочу_рассказать_о_компании_Glob {
+//   font-family: "Roboto";
+//   color: rgb(58, 58, 58);
+//   font-weight: bold;
+
+//   text-align: justifyCenter;
+//   -moz-transform: matrix(1, 0, 0, 1.0004369153061, 0, 0);
+//   -webkit-transform: matrix(1, 0, 0, 1.0004369153061, 0, 0);
+//   -ms-transform: matrix(1, 0, 0, 1.0004369153061, 0, 0);
+//   position: absolute;
+//   left: 659.869px;
+//   top: 4294.608px;
+//   width: 600.513px;
+//   height: 108px;
+//   z-index: 94;
+// }
