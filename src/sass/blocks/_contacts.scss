@@ -1,0 +1,55 @@
+.contacts {
+  position: relative;
+  min-height: 438px;
+  background: url("../img/bg_contact.jpg") no-repeat (center/cover);
+  &__wrapper {
+    background-color: rgba(255, 255, 255, 0.20);
+    display: block;
+    position: absolute;
+    width: 896px;
+    left: 50%;
+    transform: translateX(-50%);
+    // margin: 0 auto;
+    top: 60px;
+  }
+  &__subheader {
+    height: 64px;
+    font-size: 14px;
+    text-transform: uppercase;
+    // line-height: 3.643;
+    background: #25333c;
+    color: $white-text;
+    text-align: center;
+    h2 {
+      margin: 0;
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+}
+// .Остались_вопросы_ {
+//   font-size: 19px;
+//   font-family: "Roboto";
+//   color: rgb(255, 255, 255);
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   line-height: 2.684;
+//   text-align: center;
+//   position: absolute;
+//   left: 856.25px;
+//   top: 4511.502px;
+//   z-index: 73;
+// }
+// .Напишите_нам_ {
+//   font-size: 14px;
+//   font-family: "Roboto";
+//   color: rgb(255, 255, 255);
+//   text-transform: uppercase;
+//   line-height: 3.643;
+//   text-align: center;
+//   position: absolute;
+//   left: 900.843px;
+//   top: 4528.499px;
+//   z-index: 74;
+// }
