@@ -63,5 +63,46 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 13px;
+  }
+  &__creator, &__creator-logo, a {
+    
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__policy {
+    a {
+      font-size: 13px;
+      color:$main-color;
+      text-decoration: underline;
+    }
+  }
+  &__creator-logo {
+    padding: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2.2rem;
   }
 }
+// .©_2010_Scratch_com_ua {
+//   font-size: 13px;
+//   font-family: "Roboto";
+//   color: rgba(255, 255, 255, 0.6);
+//   line-height: 1.308;
+//   text-align: center;
+//   position: absolute;
+//   left: 391.532px;
+//   top: 5534.498px;
+//   z-index: 9;
+// }
+.Политика_конфидециальности {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(236, 100, 75);
+  text-decoration: underline;
+  line-height: 1.308;
+  text-align: center;
+  position: absolute;
+  left: 750px;
+  top: 5551.877px;
+  z-index: 10;
+}
+
