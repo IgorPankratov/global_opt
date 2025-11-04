@@ -1,0 +1,34 @@
+@media (max-width: 1140px) {
+  .container {
+    padding: 0 4vw;
+  }
+  .header {
+    &__nav {
+      margin: 0 8vw;
+      //   padding: 0 2vw;
+    }
+    &__logo {
+      padding-right: 15px;
+    }
+    &__menu {
+      padding: 35px 10px 0 0;
+      &__item {
+        padding: 0px 5px;
+        font-size: 13px;
+        border-right: 1px dotted #fff;
+      }
+    }
+    &__call {
+      font-size: 12px;
+    }
+    &__phone {
+      font-size: 15px;
+    }
+    &__btn {
+      margin-top: 0.5rem;
+      width: 130px;
+      height: 30px;
+      font-size: 10px;
+    }
+  }
+}
