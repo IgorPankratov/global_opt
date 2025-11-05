@@ -11,10 +11,13 @@
   }
 
   &__nav {
+    width: 1140px;
     position: absolute;
     display: flex;
     justify-content: space-between;
     top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 2;
   }
   &__logo {
@@ -31,7 +34,7 @@
       padding: 0 13px;
       font-family: Roboto;
       font-size: 15px;
-      border-right: 2px dotted $white-text;
+      border-right: 1px dotted rgba(255, 255, 255, 0.4);
       &:last-child {
         border-right: none;
       }
