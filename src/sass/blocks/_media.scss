@@ -49,6 +49,9 @@
       &_text {
         font-size: 14px;
       }
+      &_item {
+        padding: 0 15px;
+      }
     }
     &__btn {
       width: 130px;
@@ -58,12 +61,20 @@
       line-height: 31px;
     }
   }
+  .advantages {
+    &__items {
+      padding: 37px 20px 50px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
   .header {
     &__nav {
-      width: 100%;
+      width: 99%;
     }
     &__logo {
       width: 80px;
@@ -88,6 +99,14 @@
   }
   .promo {
     &__desc_text {
+      font-size: 11px;
+    }
+  }
+  .advantages {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
       font-size: 11px;
     }
   }
@@ -137,11 +156,8 @@
     }
     &__desc {
       display: grid;
-      grid-template: repeat(2, minmax(125px, auto))/ repeat(2, 1fr);
+      grid-template: repeat(2, minmax(125px, auto)) / repeat(2, 1fr);
       row-gap: 20px;
-      &_item {
-        padding: 0 15px;
-      }
       &_text {
         font-size: 12px;
       }
@@ -205,6 +221,17 @@
     }
     &__desc {
       grid-template: repeat(4, minmax(125px, auto)) / 1fr;
+    }
+  }
+  .advantages {
+    &__header {
+      font-size: 12px;
+    }
+    &__items {
+      grid-template: repeat(8, minmax(60px, auto)) / 1fr;
+    }
+    &__text {
+      font-size: 11px;
     }
   }
 }
