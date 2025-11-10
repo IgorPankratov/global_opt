@@ -170,6 +170,14 @@
       line-height: 31px;
     }
   }
+  .advantages {
+    &__text {
+      font-size: 11px;
+      span {
+        line-height: 15px;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
