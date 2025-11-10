@@ -69,6 +69,11 @@
       font-size: 14px;
     }
   }
+  .work {
+    .container {
+      padding: 0 10px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -108,6 +113,22 @@
     }
     &__text {
       font-size: 11px;
+    }
+  }
+  .work {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+    &__item {
+      &_descr {
+        span {
+          font-size: 13px;
+        }
+        font-size: 11px;
+      }
     }
   }
 }
@@ -176,6 +197,15 @@
       span {
         line-height: 15px;
       }
+    }
+  }
+  .work {
+    &__header {
+      line-height: 20px;
+    }
+    &__wrapper {
+      grid-template: repeat(3, 1fr) / 1fr;
+      row-gap: 28px;
     }
   }
 }

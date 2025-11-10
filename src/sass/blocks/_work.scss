@@ -17,6 +17,9 @@
     column-gap: 28px;
   }
   &__item {
+    img {
+      width: 100%;
+    }
     &_descr {
       margin-top: 28px;
       text-align: center;
