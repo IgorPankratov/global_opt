@@ -139,6 +139,32 @@
       font-size: 17px;
     }
   }
+  .prices {
+    .container {
+      padding: 0 20px;
+    }
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+    &__subheader {
+      font-size: 14px;
+    }
+    &__descr {
+      span {
+        font-size: 22px;
+      }
+    }
+    &__subDescr {
+      font-size: 16px;
+    }
+    &__btn {
+      width: 140px; 
+      height: 35px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -216,6 +242,15 @@
       row-gap: 28px;
     }
   }
+  .prices {
+    .container {
+      padding: 0 20px;
+    }
+    &__wrapper {
+      grid-template: repeat(2, minmax(360px, auto)) / repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -278,6 +313,20 @@
     }
     &__text {
       font-size: 11px;
+    }
+  }
+  .agent {
+    &__text {
+      font-size: 15px;
+    }
+  }
+  .prices {
+    &__text {
+      width: 100%;
+    }
+    &__wrapper {
+      grid-template: repeat(4, minmax(360px, auto)) / 1fr;
+      gap: 20px;
     }
   }
 }
