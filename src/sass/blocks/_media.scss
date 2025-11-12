@@ -131,6 +131,14 @@
       }
     }
   }
+  .agent {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
