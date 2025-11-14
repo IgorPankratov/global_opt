@@ -77,6 +77,9 @@
 }
 
 @media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
   .header {
     &__nav {
       width: 99%;
@@ -163,6 +166,14 @@
     &__btn {
       width: 140px; 
       height: 35px;
+    }
+  }
+  .consultation {
+    &__header {
+      font-size: 18px;
+    }
+    &__icon {
+      top: 15%;
     }
   }
 }
@@ -327,6 +338,19 @@
     &__wrapper {
       grid-template: repeat(4, minmax(360px, auto)) / 1fr;
       gap: 20px;
+    }
+  }
+  .consultation {
+    &__header {
+      font-size: 15px;
+    }
+    &__icon {
+      top: 10%;
+    }
+    &__form {
+      min-height: 280px;
+      padding: 80px 20px 20px;
+      grid-template: repeat(4, 45px) / 1fr;
     }
   }
 }
