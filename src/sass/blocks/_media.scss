@@ -74,6 +74,15 @@
       padding: 0 10px;
     }
   }
+  .schema {
+    &__row {
+      grid-template-columns: repeat(auto-fit, 220px);
+      gap: 20px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -164,7 +173,7 @@
       font-size: 16px;
     }
     &__btn {
-      width: 140px; 
+      width: 140px;
       height: 35px;
     }
   }
@@ -182,6 +191,14 @@
     }
     &__text {
       font-size: 17px;
+    }
+  }
+  .schema {
+    &__header {
+      font-size: 18px;
+    }
+    &__row {
+     grid-template-columns: repeat(2, 1fr);
     }
   }
 }
@@ -365,5 +382,12 @@
     &__text {
       font-size: 15px;
     }
+  }
+  .schema {
+    &__row {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+    
   }
 }
