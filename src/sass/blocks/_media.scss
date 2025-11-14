@@ -176,6 +176,14 @@
       top: 15%;
     }
   }
+  .managers {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -351,6 +359,11 @@
       min-height: 280px;
       padding: 80px 20px 20px;
       grid-template: repeat(4, 45px) / 1fr;
+    }
+  }
+  .managers {
+    &__text {
+      font-size: 15px;
     }
   }
 }
