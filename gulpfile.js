@@ -12,6 +12,10 @@ gulp.task("server", function () {
     server: {
       baseDir: "dist",
     },
+    port: 5000,
+    host: "0.0.0.0",
+    open: false,
+    ui: false,
   });
 
   gulp.watch("src/*.html").on("change", browserSync.reload);

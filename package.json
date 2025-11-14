@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "gulp",
+    "build": "gulp styles && gulp scripts && gulp fonts && gulp icons && gulp html && gulp images",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Igor Pankratov",
@@ -25,5 +27,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }
