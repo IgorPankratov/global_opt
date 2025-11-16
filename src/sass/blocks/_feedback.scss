@@ -16,17 +16,16 @@
   &__carousel {
     margin: 35px auto;
     position: relative;
-    width: 600px;
-    // overflow: hidden;
+    max-width: 600px;
+    overflow: hidden;
     &-prevBtn,
     &-nextBtn {
       position: absolute;
       top: 25%;
       transform: translateY(-50%);
-      background: rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 0);
       // color: white;
       border: none;
-      padding: 10px;
       cursor: pointer;
     }
 
@@ -55,6 +54,7 @@
     text-align: center;
     align-items: center;
     filter: opacity(25%); /* Базовая прозрачность */
+    padding: 0 20px;
   }
   .active {
     filter: none; /* Убираем прозрачность для активного слайда */

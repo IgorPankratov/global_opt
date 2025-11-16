@@ -201,6 +201,17 @@
      grid-template-columns: repeat(2, 1fr);
     }
   }
+  .feedback {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+    &__comment {
+      font-size: 16px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -387,7 +398,15 @@
     &__row {
       grid-template-columns: 1fr;
       gap: 25px;
-    }
-    
+    }    
   }
+  .feedback {
+    &__carousel {
+      &-prevBtn, &-nextBtn {
+        top: 18%;
+        margin: 0 -10%;
+      }
+    }
+  }
+
 }
