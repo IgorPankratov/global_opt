@@ -14,7 +14,7 @@ gulp.task("server", function () {
     },
     port: 5000,
     host: "0.0.0.0",
-    open: false,
+    open: true, //false
     ui: false,
   });
 
