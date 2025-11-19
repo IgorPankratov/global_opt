@@ -74,9 +74,21 @@
       padding: 0 10px;
     }
   }
+  .schema {
+    &__row {
+      grid-template-columns: repeat(auto-fit, 220px);
+      gap: 20px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
   .header {
     &__nav {
       width: 99%;
@@ -161,8 +173,43 @@
       font-size: 16px;
     }
     &__btn {
-      width: 140px; 
+      width: 140px;
       height: 35px;
+    }
+  }
+  .consultation {
+    &__header {
+      font-size: 18px;
+    }
+    &__icon {
+      top: 15%;
+    }
+  }
+  .managers {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+  }
+  .schema {
+    &__header {
+      font-size: 18px;
+    }
+    &__row {
+     grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .feedback {
+    &__header {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 17px;
+    }
+    &__comment {
+      font-size: 16px;
     }
   }
 }
@@ -329,4 +376,59 @@
       gap: 20px;
     }
   }
+  .consultation {
+    &__header {
+      font-size: 15px;
+    }
+    &__icon {
+      top: 10%;
+    }
+    &__form {
+      min-height: 280px;
+      padding: 80px 20px 20px;
+      grid-template: repeat(4, 45px) / 1fr;
+    }
+  }
+  .managers {
+    &__text {
+      font-size: 15px;
+    }
+  }
+  .schema {
+    &__row {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }    
+  }
+  .feedback {
+    &__carousel {
+      &-prevBtn, &-nextBtn {
+        top: 18%;
+        margin: 0 -10%;
+      }
+    }
+  }
+  .contacts {
+    &__subheader {
+      h2 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      p {
+        font-size: 12px;
+      }
+      
+    }
+    &__form {
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(4, minmax(45px, auto));
+     row-gap: 10px;
+    }
+    &__text, &__btn {
+      grid-column: unset;
+    }
+    
+  }
+  
+
 }
