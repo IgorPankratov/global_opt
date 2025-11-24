@@ -64,9 +64,10 @@ orderBtn.forEach((item) => {
 });
 
 closeModal.addEventListener('click', function () {
+    
+    consultationModal.style.display = 'none';
+    thanksModal.style.display = 'none';
     overlay.style.display = 'none';
-    consultationModal.style.display = "none";
-    thanksModal.style.display = "none";
 });
 
 
