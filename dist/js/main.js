@@ -40,3 +40,33 @@ prevBtn.addEventListener('click', () => {
 //         slide(0);
 //     }
 // }, 3000);
+
+// Modal 
+const consultationBtn = document.querySelectorAll('[data-modal="consultation"]');
+const orderBtn = document.querySelectorAll('[data-modal="order"]');
+const overlay = document.querySelector('.overlay'); 
+const consultationModal = document.getElementById('consultation');
+const thanksModal = document.getElementById('thanks'); 
+const closeModal = document.querySelector('.modal__close');
+
+
+consultationBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        overlay.style.display = 'block';
+        consultationModal.style.display = 'block';      
+    })
+});
+orderBtn.forEach((item) => {
+    item.addEventListener('click', function () {
+        overlay.style.display = 'block';
+        thanksModal.style.display = 'block';      
+    })
+});
+
+closeModal.addEventListener('click', function () {
+    overlay.style.display = 'none';
+    consultationModal.style.display = "none";
+    thanksModal.style.display = "none";
+});
+
+
