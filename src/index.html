@@ -41,7 +41,7 @@
                 <a href="tel:89264230100">+7 (926) 423 01 00</a>
               </div>
             </div>
-            <button class="header__btn">Перезвоните мне</button>
+            <button class="header__btn" data-modal="consultation">Перезвоните мне</button>
           </div>
         </nav>
       </div>
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <button class="promo__btn">Получить расчёт</button>
+        <button class="promo__btn" data-modal="consultation">Получить расчёт</button>
       </div>
     </section>
     <section class="advantages">
@@ -370,7 +370,7 @@
             />
           </div>
           <div class="consultation__btn">
-            <button class="consultation__btn-send">Отправить заявку</button>
+            <button class="consultation__btn-send" data-modal="order">Отправить заявку</button>
           </div>
         </form>
       </div>
@@ -581,7 +581,7 @@
               <textarea name="text" placeholder="Сообщение..."></textarea>
             </div>
             <div class="contacts__btn">
-              <button class="contacts__btn-send">Отправить заявку</button>
+              <button class="contacts__btn-send" data-modal="order">Отправить заявку</button>
             </div>
           </form>
         </div>
@@ -626,6 +626,53 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="modal" id="consultation">
+        <div class="modal__close">&times;</div>
+        <div class="modal__subheader">Просто заполните форму</div>
+        <div class="modal__descr">мы перезвоним в течении 10 минут</div>
+        <form action="#" class="consultation__form">
+          <div class="consultation__input">
+            <input
+              required
+              placeholder="Ваше имя..."
+              type="text"
+              name="name"
+              id="name"
+              class="consultation__input-name"
+            />
+          </div>
+          <div class="consultation__input">
+            <input
+              required
+              placeholder="Ваш телефон..."
+              type="tel"
+              name="phone"
+              id="phone"
+              class="consultation__input-phone"
+            />
+          </div>
+          <div class="consultation__input">
+            <input
+              required
+              placeholder="Ваш email..."
+              type="email"
+              name="email"
+              id="email"
+              class="consultation__input-email"
+            />
+          </div>
+          <div class="consultation__btn">
+            <button class="consultation__btn-send" data-modal="order">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+      <div id="thanks" class="modal modal_mini" >
+        <div class="modal__close">&times;</div>
+        <div class="modal__subheader">Спасибо</div>
+        <div class="modal__descr">Ваша заявка принята</div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
