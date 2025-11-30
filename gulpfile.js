@@ -74,6 +74,10 @@ gulp.task("icons", function () {
     .pipe(gulp.dest("dist/icons"))
     .pipe(browserSync.stream());
 });
+// для php
+gulp.task("mailer", function () {
+  return gulp.src("src/mailer/**/*").pipe(gulp.dest("dist/mailer"));
+});
 
 //Таск для изображений
 gulp.task("images", function () {
@@ -93,6 +97,7 @@ gulp.task(
     "fonts",
     "icons",
     "html",
+    "mailer",
     "images"
   )
 );

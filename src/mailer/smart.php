@@ -14,12 +14,12 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'megapankrat@yandex.ru';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика либо пароль приложения
+$mail->Password = 'mgcpgpiuwpuftjfp';                           // Наш пароль от ящика либо пароль приложения
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('megapankrat@yandex.ru', 'Global_Opt');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
+$mail->addAddress('megapankrat@yandex.ru');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');

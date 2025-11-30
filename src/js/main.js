@@ -42,6 +42,7 @@ prevBtn.addEventListener("click", () => {
 // }, 3000);
 
 // Modal
+
 const consultationBtn = document.querySelectorAll(
   '[data-modal="consultation"]'
 );
@@ -69,5 +70,34 @@ closeModal.forEach((item) => {
     consultationModal.style.display = "none";
     thanksModal.style.display = "none";
     overlay.style.display = "none";
+  });
+});
+
+// MAILER
+
+const consultationForm = document.querySelectorAll(".consultation__form");
+
+consultationForm.forEach((item) => {
+  item.addEventListener("submit", function (e) {
+    e.preventDefault(); // Отменяем стандартное поведение формы
+    // console.log("Отправка письма");
+    const formData = new FormData(this); // Создаём экземпляр класса для удобства дальнейшей обработки при отправке на сервер
+
+    // Делаем запрос на сервер
+    fetch("../mailer/smart.php", {
+      method: "POST",
+      body: "formData",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          console.log("Сообщение отпралено");
+        } else {
+          console.log(`Сообщение не отправлено ${data.error}`);
+        }
+      })
+      .catch((error) => {
+        console.log("Ошибка сети");
+      });
   });
 });
