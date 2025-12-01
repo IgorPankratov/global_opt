@@ -97,7 +97,7 @@ consultationForm.forEach((item) => {
         }
       })
       .catch((error) => {
-        console.log(`Ошибка сети. ${error.messsage}`);
+        console.log(`Ошибка сети. ${error.message}`);
       });
   });
 });
