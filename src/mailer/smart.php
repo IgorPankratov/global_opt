@@ -1,14 +1,29 @@
 <?php 
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
+// Устанавливаем заголовок Content-Type: application/json
+header('Content-Type: application/json');
+
+// Получаем данные из POST-запроса
+$name = $_POST['name'] ?? 'Не указано';
+$phone = $_POST['phone'] ?? 'Не указано';
+$email = $_POST['email'] ?? 'Не указано';
+
+// // Проверяем, что все поля заполнены
+// if (empty($name) || empty($phone) || empty($email)) {
+//     echo json_encode([
+//         'success' => false,
+//         'message' => 'Все поля обязательны для заполнения'
+//     ]);
+//     exit;
+// }
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
-$mail->CharSet = 'utf-8';
+$mail->CharSet = 'UTF-8';
 
-// $mail->SMTPDebug = 3;                               // Enable verbose debug output
+// Включите для отладки (уберите после теста!)
+$mail->SMTPDebug = 2;
+$mail->Debugoutput = 'html';                            // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
@@ -29,16 +44,23 @@ $mail->addAddress('megapankrat@yandex.ru');     // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Данные';
-$mail->Body    = '
-		Пользователь оставил данные <br> 
-	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
-	E-mail: ' . $email . '';
-
-if(!$mail->send()) {
-    return false;
+$mail->Body    = 'Пользователь оставил данные<br>' .
+    'Имя: ' . htmlspecialchars($name) . '<br>' .
+    'Номер телефона: ' . htmlspecialchars($phone) . '<br>' .
+    'E-mail: ' . htmlspecialchars($email);
+// Отправляем письмо и возвращаем JSON-ответ
+if ($mail->send()) {
+    echo json_encode([
+        'success' => true,
+        'message' => 'Письмо успешно отправлено'
+    ]);
 } else {
-    return true;
+    echo json_encode([
+        'success' => false,
+        'message' => 'Ошибка при отправке: ' . $mail->ErrorInfo
+    ]);
 }
+
+exit;
 
 ?>

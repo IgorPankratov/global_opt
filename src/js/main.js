@@ -80,13 +80,22 @@ const consultationForm = document.querySelectorAll(".consultation__form");
 consultationForm.forEach((item) => {
   item.addEventListener("submit", function (e) {
     e.preventDefault(); // Отменяем стандартное поведение формы
-    // console.log("Отправка письма");
     const formData = new FormData(this); // Создаём экземпляр класса для удобства дальнейшей обработки при отправке на сервер
+
+    // Validation
+    const name = this.querySelector('[name="name"]').value;
+    const phone = this.querySelector('[name="phone"]').value;
+    const email = this.querySelector('[name="email"]').value;
+
+    if (!name || !phone || !email) {
+      console.log("Заполните все поля!");
+      return;
+    }
 
     // Делаем запрос на сервер
     fetch("../mailer/smart.php", {
       method: "POST",
-      body: "formData",
+      body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
