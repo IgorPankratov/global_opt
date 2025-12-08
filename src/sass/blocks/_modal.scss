@@ -9,7 +9,7 @@
 }
 .modal {
   position: absolute;
-  max-width: 425px;  
+  width: 425px;  
   padding: 30px 10px;
   top: 50%;
   left: 50%;
@@ -34,7 +34,7 @@
     text-align: center;
   }
   .consultation__form {
-    //max-width: 425px;
+    width: 100%;
     min-height: 220px;
     padding-top: 10px;
     margin-top: 10px;
